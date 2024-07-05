@@ -1,0 +1,15 @@
+{% extends 'myapp/base.html' %}
+{% block body%}
+<h1>Hey this is a room</h1> 
+<br>
+<a href="">{{ chatroom.name }}</a><br>
+
+
+<form method="post">
+    {% csrf_token %}
+    <input type="text" name="message" placeholder="Enter messege">
+    <button type="submit">Send</button>
+</form>
+
+{% endblock %}
+
