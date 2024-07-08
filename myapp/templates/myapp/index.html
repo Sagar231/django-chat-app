@@ -1,0 +1,10 @@
+{% extends 'myapp/base.html' %}
+{% block body%}
+<h1>Hey this is index</h1>
+{% for room in chatrooms %}
+<a href="{% url 'chatroom' room.slug %}">{{ room.name }}</a><br>
+
+{% endfor %}
+
+{% endblock %}
+
