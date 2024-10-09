@@ -1,3 +1,3 @@
 # django-chat-app
 An django based application which allows diffrent clients to chat with each other.
-uses web sockets concept
+uses web sockets 
